@@ -1,2 +1,6 @@
 node_modules/
 .env
+.DS_Store
+*.log
+flight_booking.log
+src/config/config.json
