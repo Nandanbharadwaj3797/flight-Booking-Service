@@ -43,7 +43,7 @@ async function makePayment(req, res) {
 
         inMemDb[idempotencyKey] = idempotencyKey; 
         SuccessResponse.data = response;
-        return  res.Status(StatusCodes.OK).json(SuccessResponse);
+        return  res.status(StatusCodes.OK).json(SuccessResponse);
     } catch (error) {
         console.error(error);
         ErrorResponse.error = error;
